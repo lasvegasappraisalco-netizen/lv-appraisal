@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+
+const serviceSchema = {
+  "@type": "Service",
+  "@id": "https://lvappraisalco.com/lenders#service",
+  "name": "Appraisal Services for Lenders in Las Vegas",
+  "description": "USPAP-compliant, FHA-approved residential appraisals for community banks, credit unions, private money lenders, and mortgage brokers throughout Clark County, Nevada. AIR-compliant ordering and fast turnaround.",
+  "provider": { "@id": "https://lvappraisalco.com/#business" },
+  "areaServed": { "@type": "State", "name": "Nevada" },
+  "serviceType": "Lender Appraisal",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Community Banks, Credit Unions, Private Lenders, Mortgage Brokers"
+  }
+};
+---
+
+<Base
+  title="Appraisals for Lenders in Las Vegas | FHA-Approved | Las Vegas Appraisal Co."
+  description="Lender-compliant residential appraisals for community banks, credit unions, and private money lenders in Las Vegas. FHA-approved, USPAP-compliant, and fast. Call (702) 894-9279."
+  canonical="https://lvappraisalco.com/lenders"
+  schema={serviceSchema}
+>
+
+  <div class="service-page-header">
+    <div class="narrow">
+      <p class="eyebrow">For Lenders</p>
+      <h1>Appraisal Services for Lenders in Las Vegas</h1>
+      <p style="color: var(--text-secondary); margin-top: 16px; font-size: 1.05rem;">
+        FHA-approved, USPAP-compliant residential appraisals for community banks, credit unions, and private money lenders across Clark County.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="service-content">
+      <p>Las Vegas Appraisal Co. has served lenders in the Las Vegas Valley since 2008. Our appraisers are Nevada State Certified, FHA-approved, and experienced with the full range of loan products — conventional, FHA, VA, non-QM, reverse mortgage, HELOC, and private money. Every report is prepared in full compliance with USPAP and the Appraiser Independence Requirements (AIR), and every engagement is handled at arm's length from the loan production side of your institution.</p>
+
+      <h2>Who We Work With</h2>
+      <ul>
+        <li><strong>Community banks</strong> — local and regional portfolio lenders in Nevada and the Mountain West</li>
+        <li><strong>Credit unions</strong> — Nevada-chartered and federally chartered credit unions serving Clark County members</li>
+        <li><strong>Private and hard money lenders</strong> — fix-and-flip, bridge, and short-term residential loans</li>
+        <li><strong>Mortgage brokers</strong> — when an AIR-compliant independent appraiser is required</li>
+        <li><strong>Non-bank lenders and REITs</strong> — non-QM and investor-focused residential loan products</li>
+        <li><strong>Reverse mortgage lenders</strong> — HECM and proprietary reverse products</li>
+      </ul>
+
+      <h2>Loan Products We Appraise For</h2>
+      <p>Our senior appraisers are FHA-approved and experienced with every residential loan product used in the Las Vegas market. That includes conventional Fannie Mae and Freddie Mac appraisals, FHA 1004 and 1025 forms, VA appraisals when assigned through the Department of Veterans Affairs rotation, HELOC and second-position appraisals, bridge and hard money short-term loans, reverse mortgages, and non-QM investor loans.</p>
+
+      <h2>Property Types</h2>
+      <p>We handle the full range of residential property in Clark County — single-family detached homes, condominiums, townhomes, 2- to 4-unit residential income properties, custom homes on acreage, equestrian estates, multi-million dollar luxury properties, high-rise residential units on the Strip and in Summerlin, and vacant residential land. When a property is complex or unusual, our partner James K. Smith brings over three decades of local valuation experience to the assignment.</p>
+
+      <h2>AIR Compliance and Independence</h2>
+      <p>Appraiser Independence Requirements are non-negotiable for us. We accept orders exclusively through compliant channels — your bank's appraisal department, an AMC on your approved list, or a separate ordering function on the mortgage brokerage side. We do not accept orders from loan officers, originators, or any party with a commission interest in the transaction, and we do not discuss value before the report is completed.</p>
+
+      <h2>Turnaround and Delivery</h2>
+      <p>Most standard lender reports are delivered within three to five business days of the inspection, with expedited service available for rush files. Reports are delivered in PDF and XML format via Mercury Network, AppraisalPort, or direct secure email, and we can integrate with your institution's preferred delivery system on request.</p>
+
+      <h2>Quality Control and Review</h2>
+      <p>Every report passes a six-point internal quality control review before it leaves our office. We also perform Standard 3 appraisal review work for lenders evaluating third-party appraisals in portfolio review, due diligence, or buyback defense.</p>
+
+      <h2>Geographic Coverage</h2>
+      <p>We cover the entire Las Vegas Valley and all of Clark County, including Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Paradise, Enterprise, Whitney, Sunrise Manor, and Pahrump. For portfolio clients with properties outside this area, we can coordinate with qualified partners across Nevada.</p>
+
+      <div class="service-cta">
+        <p>Set up a new lender relationship or add us to your approved panel.</p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:+17028949279" class="btn btn-primary">(702) 894-9279</a>
+          <a href="/contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

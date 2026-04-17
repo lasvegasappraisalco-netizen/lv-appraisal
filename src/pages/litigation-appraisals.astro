@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+
+const serviceSchema = {
+  "@type": "Service",
+  "@id": "https://lvappraisalco.com/litigation-appraisals#service",
+  "name": "Litigation Appraisals in Las Vegas",
+  "description": "Defensible, USPAP-compliant residential real estate appraisals for civil litigation, partnership dissolutions, bankruptcy, and contested valuations in Clark County, Nevada. Court-certified expert witness testimony available.",
+  "provider": { "@id": "https://lvappraisalco.com/#business" },
+  "areaServed": { "@type": "State", "name": "Nevada" },
+  "serviceType": "Litigation Appraisal",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Attorneys, Mediators, and Courts"
+  }
+};
+---
+
+<Base
+  title="Litigation Appraisals in Las Vegas | Expert Witness Testimony | Las Vegas Appraisal Co."
+  description="Court-ready residential appraisals for civil litigation, partnership dissolutions, bankruptcy, and contested valuations. Nevada court-certified expert witness on staff. Call (702) 894-9279."
+  canonical="https://lvappraisalco.com/litigation-appraisals"
+  schema={serviceSchema}
+>
+
+  <div class="service-page-header">
+    <div class="narrow">
+      <p class="eyebrow">Litigation Appraisals</p>
+      <h1>Litigation Appraisals in Las Vegas</h1>
+      <p style="color: var(--text-secondary); margin-top: 16px; font-size: 1.05rem;">
+        Defensible valuations and expert witness testimony for attorneys, mediators, and Nevada courts.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="service-content">
+      <p>When property value is in dispute, the appraisal report is only as strong as the appraiser behind it. At Las Vegas Appraisal Co., our partners have spent decades preparing reports that hold up in Nevada courts, depositions, and mediations. James K. Smith is a court-certified expert witness with dozens of hearings to his credit, and every litigation report we produce is built to survive cross-examination.</p>
+
+      <h2>When You Need a Litigation Appraisal</h2>
+      <p>Attorneys across the Las Vegas Valley retain us on matters where an independent, defensible valuation is essential to the case. Common situations include:</p>
+      <ul>
+        <li><strong>Partnership and LLC dissolutions</strong> — buyouts of co-owned residential property</li>
+        <li><strong>Bankruptcy proceedings</strong> — Chapter 7, 11, and 13 filings requiring fair market value</li>
+        <li><strong>Estate and trust disputes</strong> — contested date-of-death or retrospective valuations</li>
+        <li><strong>Breach of contract and real estate fraud</strong> — damages cases tied to property value</li>
+        <li><strong>Diminution of value claims</strong> — stigma, construction defect, nuisance, or easement cases</li>
+        <li><strong>Eminent domain and condemnation</strong> — residential takings and partial takings</li>
+        <li><strong>Property tax appeals</strong> — evidence of value before the Clark County Board of Equalization</li>
+        <li><strong>Contested divorces</strong> — when a standard divorce appraisal moves into full litigation</li>
+      </ul>
+
+      <h2>Court-Certified Expert Witness Testimony</h2>
+      <p>A report on paper is one thing. Defending that report under oath is another. James K. Smith has testified as a court-certified expert witness in Nevada district court on dozens of occasions, and all of our senior appraisers are trained in USPAP Standards 1 through 3. We are prepared to give deposition testimony, write rebuttal reports, and take the stand when your case requires it.</p>
+
+      <h2>What Makes a Litigation-Grade Report</h2>
+      <p>Every litigation appraisal we produce is built to a higher evidentiary standard than a standard residential report. That means:</p>
+      <ul>
+        <li>A full interior and exterior inspection of the subject property</li>
+        <li>A thoroughly documented selection and adjustment of comparable sales</li>
+        <li>A clear, written methodology that an opposing expert cannot easily dismiss</li>
+        <li>Full USPAP compliance, including Standard 3 review work when required</li>
+        <li>Retrospective valuations tied to a specific effective date when the case demands it</li>
+        <li>A complete workfile retained for the full statutory period, ready to produce on subpoena</li>
+      </ul>
+
+      <h2>Working With Attorneys</h2>
+      <p>We understand that litigation timelines are often tight and the stakes are high. We coordinate directly with counsel, accept engagement letters and retainers, and deliver reports in formats your firm can file or produce in discovery. We can also review opposing appraisals and identify methodological weaknesses that may support settlement or cross-examination.</p>
+
+      <h2>Types of Property We Appraise</h2>
+      <p>Our senior partners handle the full range of residential property types found across Clark County, including single-family homes, condominiums, townhomes, custom homes on acreage, equestrian estates, multi-million dollar luxury properties, high-rise residential units, and vacant residential land.</p>
+
+      <h2>Geographic Coverage</h2>
+      <p>We provide litigation appraisal services throughout Clark County and the Las Vegas Valley, including Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Paradise, Enterprise, Whitney, Sunrise Manor, and Pahrump.</p>
+
+      <div class="service-cta">
+        <p>Contact us to discuss your case in confidence.</p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:+17028949279" class="btn btn-primary">(702) 894-9279</a>
+          <a href="/contact" class="btn btn-secondary">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

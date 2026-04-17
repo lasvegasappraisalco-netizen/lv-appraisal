@@ -7,7 +7,8 @@ const services = [
   { name: "Estate & Probate", href: "/estate-probate-appraisals", desc: "Date-of-death, retrospective, and trust administration valuations." },
   { name: "Pre-Listing", href: "/pre-listing-appraisals", desc: "Price your home right the first time with an independent appraisal." },
   { name: "Refinance & Tax", href: "/refinance-tax-appraisals", desc: "Lender-compliant reports and Clark County property tax appeals." },
-  { name: "Litigation", href: "/contact", desc: "Defensible appraisals for legal disputes, with expert witness testimony." },
+  { name: "Litigation", href: "/litigation-appraisals", desc: "Defensible appraisals for legal disputes, with expert witness testimony." },
+  { name: "For Lenders", href: "/lenders", desc: "FHA-approved residential appraisals for community banks, credit unions, and private lenders." },
 ];
 
 const reviews = [
@@ -41,13 +42,29 @@ const faqSchema = {
     }
   }))
 };
+
+const reviewSchemas = reviews.map((r, i) => ({
+  "@type": "Review",
+  "@id": `https://lvappraisalco.com/#review-${i + 1}`,
+  "itemReviewed": { "@id": "https://lvappraisalco.com/#business" },
+  "author": { "@type": "Person", "name": r.name },
+  "reviewBody": r.text,
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}));
+
+const homeSchema = [faqSchema, ...reviewSchemas];
 ---
 
 <Base
   title="Las Vegas Appraisal Co. | Certified Home Appraisals in Las Vegas"
   description="Certified residential appraisals in Las Vegas. Home, divorce, estate, pre-listing, and refinance appraisals. 40+ years of experience. Available six days a week. Call (702) 894-9279."
   canonical="https://lvappraisalco.com"
-  schema={faqSchema}
+  schema={homeSchema}
 >
 
   <!-- Hero -->

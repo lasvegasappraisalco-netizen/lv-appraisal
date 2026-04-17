@@ -5,7 +5,7 @@ interface Props {
   title: string;
   description?: string;
   canonical?: string;
-  schema?: object;
+  schema?: object | object[];
 }
 
 const {
@@ -36,6 +36,10 @@ const pageNames: Record<string, string> = {
   "/pre-listing-appraisals/": "Pre-Listing Appraisals",
   "/refinance-tax-appraisals": "Refinance & Tax Appraisals",
   "/refinance-tax-appraisals/": "Refinance & Tax Appraisals",
+  "/litigation-appraisals": "Litigation Appraisals",
+  "/litigation-appraisals/": "Litigation Appraisals",
+  "/lenders": "For Lenders",
+  "/lenders/": "For Lenders",
 };
 
 const baseSchema = {
@@ -92,6 +96,7 @@ const baseSchema = {
         "https://www.facebook.com/LasVegasAppraisalCo",
         "https://www.instagram.com/lvappraisalco",
         "https://702alliance.com/members/las-vegas-appraisal-co/"
+        // TODO: add Google Business Profile URL and Yelp listing URL once confirmed with Danny
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -101,7 +106,9 @@ const baseSchema = {
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Divorce Appraisals", "description": "Court-ready, USPAP-compliant appraisals for Nevada divorce proceedings." }},
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estate & Probate Appraisals", "description": "Date-of-death, current market value, and retrospective appraisals for estate settlement." }},
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pre-Listing Appraisals", "description": "Independent valuations before listing to price your home correctly from day one." }},
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refinance & Tax Appeal Appraisals", "description": "Lender-compliant appraisals for refinancing and Clark County property tax appeals." }}
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refinance & Tax Appeal Appraisals", "description": "Lender-compliant appraisals for refinancing and Clark County property tax appeals." }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Litigation Appraisals", "description": "Court-ready appraisals for civil litigation, partnership dissolutions, bankruptcy, and contested valuations. Court-certified expert witness testimony available." }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lender Appraisals", "description": "FHA-approved, USPAP-compliant residential appraisals for community banks, credit unions, and private money lenders." }}
         ]
       },
       "hasCredential": [
@@ -155,8 +162,8 @@ const baseSchema = {
         "Clark County Real Estate"
       ],
       "memberOf": [
-        { "@type": "Organization", "name": "Coalition of Appraisers in Nevada" },
-        { "@type": "Organization", "name": "National Association of Appraisers" }
+        { "@type": "Organization", "name": "Coalition of Appraisers in Nevada", "url": "https://coalitionofappraisersnevada.com/" },
+        { "@type": "Organization", "name": "National Association of Appraisers", "url": "https://www.naappraisers.org/" }
       ]
     },
 
@@ -184,6 +191,15 @@ const baseSchema = {
         "Retrospective Appraisals",
         "Expert Witness Testimony",
         "Appraisal Review"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Real Estate Appraiser",
+        "occupationalCategory": "13-2023.00"
+      },
+      "memberOf": [
+        { "@type": "Organization", "name": "Coalition of Appraisers in Nevada", "url": "https://coalitionofappraisersnevada.com/" },
+        { "@type": "Organization", "name": "Greater Las Vegas Association of Realtors", "url": "https://www.lasvegasrealtor.com/" }
       ]
     },
 
@@ -210,8 +226,8 @@ const baseSchema = {
       "publisher": { "@id": "https://lvappraisalco.com/#business" }
     },
 
-    // Merge any page-specific schema
-    ...(pageSchema ? [pageSchema] : [])
+    // Merge any page-specific schema (object or array of objects)
+    ...(pageSchema ? (Array.isArray(pageSchema) ? pageSchema : [pageSchema]) : [])
   ]
 };
 
