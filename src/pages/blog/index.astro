@@ -1,6 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-
 const posts = [
   {
     title: "How Much Does a Home Appraisal Cost in Las Vegas? (2026 Guide)",
@@ -26,15 +25,19 @@ const posts = [
     excerpt: "Nevada is a community property state. Here's how certified appraisals work in divorce proceedings and why online estimates don't hold up in court.",
     date: "2026-04-01",
   },
+  {
+    title: "How to Remove PMI on Your Las Vegas Home (And Why You Need an Appraisal)",
+    href: "/blog/pmi-removal-appraisal-las-vegas",
+    excerpt: "If your Las Vegas home has gained value since you bought it, you may be able to cancel your PMI and save hundreds per year. Here's exactly how the appraisal process works.",
+    date: "2026-04-25",
+  },
 ];
 ---
-
 <Base
   title="Blog | Las Vegas Appraisal Co."
   description="Expert insights on home appraisals in Las Vegas — pricing, process, divorce appraisals, pre-listing tips, and more from Las Vegas Appraisal Co."
   canonical="https://lvappraisalco.com/blog"
 >
-
   <section style="background: var(--bg-warm); padding: 80px 24px;">
     <div class="narrow" style="text-align: center;">
       <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); margin-bottom: 16px; font-weight: 500;">Blog</p>
@@ -44,7 +47,6 @@ const posts = [
       </p>
     </div>
   </section>
-
   <section>
     <div class="container" style="max-width: 800px;">
       {posts.map(post => (
@@ -56,5 +58,4 @@ const posts = [
       ))}
     </div>
   </section>
-
 </Base>
