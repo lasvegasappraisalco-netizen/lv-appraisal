@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const articleSchema = {
+  "@type": "BlogPosting",
+  "headline": "Date of Death Appraisals in Nevada: What Families and Attorneys Need to Know",
+  "datePublished": "2026-04-25",
+  "dateModified": "2026-04-25",
+  "image": "https://lvappraisalco.com/logo.jpg",
+  "inLanguage": "en-US",
+  "author": { "@id": "https://lvappraisalco.com/#danbyrne" },
+  "publisher": { "@id": "https://lvappraisalco.com/#business" },
+  "mainEntityOfPage": "https://lvappraisalco.com/blog/date-of-death-appraisal-nevada"
+};
+---
+
+<Base
+  title="Date of Death Appraisals in Nevada: What Families and Attorneys Need to Know | Las Vegas Appraisal Co."
+  description="When a property owner passes away, a certified date of death appraisal is often required for probate, estate taxes, and trust administration. Here's how it works in Nevada."
+  canonical="https://lvappraisalco.com/blog/date-of-death-appraisal-nevada"
+  schema={articleSchema}
+>
+
+  <div class="service-page-header">
+    <div class="narrow">
+      <p class="eyebrow">Blog</p>
+      <h1>Date of Death Appraisals in Nevada: What Families and Attorneys Need to Know</h1>
+    </div>
+  </div>
+
+  <section class="blog-post">
+    <div class="service-content">
+      <p>When a property owner passes away, real estate held in their name must be valued as of the date of death — not today's market value. This retrospective appraisal is a critical document for probate proceedings, IRS estate tax filings, and trust administration. Here's what families and estate attorneys in Nevada need to understand about the process.</p>
+
+      <h2>What Is a Date of Death Appraisal?</h2>
+      <p>A date of death appraisal — also called a retrospective appraisal — establishes the fair market value of a property as of a specific past date: the date the owner died. The appraiser researches market conditions, comparable sales, and property data as they existed at that point in time, not as they exist today.</p>
+      <p>This type of appraisal requires an appraiser with experience in retrospective valuation and access to historical MLS data. It is not the same as a standard current-market appraisal, and it cannot be performed by someone without the appropriate credentials and data access.</p>
+
+      <h2>When Is a Date of Death Appraisal Required?</h2>
+      <p>A certified date of death appraisal is commonly required in the following situations:</p>
+      <ul>
+        <li><strong>Probate proceedings</strong> — Nevada courts require an inventory of estate assets, including real property, valued as of the date of death</li>
+        <li><strong>Federal estate tax returns (Form 706)</strong> — estates that exceed the federal exemption threshold must report the fair market value of all real property as of the decedent's death</li>
+        <li><strong>Step-up in cost basis</strong> — heirs who inherit property receive a stepped-up tax basis equal to the fair market value at the date of death, which can significantly reduce capital gains taxes when the property is eventually sold</li>
+        <li><strong>Trust administration</strong> — trustees distributing real property among beneficiaries need a certified value to ensure equitable distribution</li>
+        <li><strong>Estate disputes</strong> — when heirs disagree about the value of inherited property, an independent certified appraisal is the standard for resolution</li>
+      </ul>
+
+      <h2>The Step-Up in Basis: Why It Matters</h2>
+      <p>One of the most important — and often overlooked — reasons to get a date of death appraisal is the stepped-up cost basis. When an heir inherits a property, their tax basis is reset to the fair market value at the date of the decedent's death, not the original purchase price.</p>
+      <p>For example: if the decedent purchased a home for $150,000 in 2001 and it was worth $480,000 at the time of death, an heir who sells it shortly after inheriting it would owe capital gains taxes only on appreciation above $480,000 — not $150,000. A properly documented date of death appraisal is the IRS-accepted method for establishing that stepped-up basis. Without it, the heir may be unable to prove their basis and could face a significantly higher tax bill.</p>
+
+      <h2>How Far Back Can a Retrospective Appraisal Go?</h2>
+      <p>In most cases, a date of death appraisal can be completed for any date within the past several years, provided that sufficient historical market data is available. Las Vegas Appraisal Co. has access to historical MLS records and county assessor data throughout Clark County, and our appraisers are experienced in reconstructing market conditions as of a specific past date.</p>
+      <p>If a significant amount of time has passed since the date of death, contact us to discuss feasibility — we'll give you a straight answer on what's possible.</p>
+
+      <h2>What the Appraiser Needs</h2>
+      <p>To complete a date of death appraisal, we typically need the following:</p>
+      <ul>
+        <li>The property address and assessor parcel number</li>
+        <li>The exact date of death</li>
+        <li>Access to the interior of the property for inspection (or, in some cases, exterior-only access with documentation)</li>
+        <li>Any relevant information about the property's condition at the time of death, such as recent improvements or deferred maintenance</li>
+      </ul>
+      <p>If the property has already been sold or transferred, we can still complete the appraisal based on available records and a thorough market analysis.</p>
+
+      <h2>Working With Estate Attorneys and CPAs</h2>
+      <p>We work regularly with probate attorneys, estate planning attorneys, CPAs, and trust officers throughout the Las Vegas Valley. We understand that estate matters often involve tight filing deadlines — particularly for IRS Form 706, which is due nine months after the date of death — and we prioritize turnaround accordingly.</p>
+      <p>Our reports are prepared in full USPAP compliance and are formatted for direct use in probate filings, tax returns, and legal proceedings. We can also provide expert witness testimony if an estate matter moves into litigation.</p>
+
+      <h2>Cost and Timeline</h2>
+      <p>Most date of death appraisals in the Las Vegas Valley are completed within 3–5 business days of the property inspection. Fees start at $425 for standard single-family properties, with pricing depending on property type, complexity, and how far back the effective date falls.</p>
+      <p>Call or text us at <a href="tel:+17028949279">(702) 894-9279</a> six days a week to discuss your situation and get a firm quote. We're happy to coordinate directly with your attorney or CPA.</p>
+
+      <div class="service-cta">
+        <p>Estate and probate appraisals handled with care.</p>
+        <a href="tel:+17028949279" class="btn btn-primary">(702) 894-9279</a>
+      </div>
+    </div>
+  </section>
+
+</Base>
