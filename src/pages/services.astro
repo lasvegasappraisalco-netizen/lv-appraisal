@@ -4,7 +4,7 @@ const services = [
   {
     name: "Home Appraisals",
     href: "/home-appraisals",
-    desc: "Whether you're buying, selling, refinancing, or simply want to know what your home is worth, we deliver certified residential appraisals you can rely on. Nevada State Certified and FHA-approved.",
+    desc: "Whether you're buying, selling, or simply want to know what your home is worth, we deliver certified residential appraisals you can rely on. Nevada State Certified and FHA-approved.",
     price: "Starting at $425",
   },
   {
@@ -32,10 +32,10 @@ const services = [
     price: "Starting at $425",
   },
   {
-    name: "Refinance & Tax Appeal Appraisals",
-    href: "/refinance-tax-appraisals",
-    desc: "Lender-compliant reports for refinancing, HELOC, and home equity loans. Independent appraisals for Clark County property tax appeals.",
-    price: "Starting at $425",
+    name: "Tax Appeal & Home Measurement",
+    href: "/contact",
+    desc: "Independent appraisals for Clark County property tax appeals, plus ANSI-compliant home measurement with a detailed floor plan sketch and GLA calculations. Useful for tax appeals, permit applications, and MLS accuracy.",
+    price: "From $175 — contact for quote",
   },
   {
     name: "Litigation Appraisals",
@@ -46,7 +46,7 @@ const services = [
   {
     name: "For Lenders",
     href: "/lenders",
-    desc: "FHA-approved residential appraisals for community banks, credit unions, and private money lenders. USPAP- and AIR-compliant with fast turnaround.",
+    desc: "FHA-approved residential appraisals for refinance, HELOC, and home equity loans. Serving community banks, credit unions, independent mortgage brokers, and private money lenders. USPAP- and AIR-compliant with fast turnaround.",
     price: "Contact for panel",
   },
   {
@@ -55,18 +55,12 @@ const services = [
     desc: "Investment strategy, highest and best use analysis, and custom market reports covering home price trends, rental trends, scarcity, and demand across the Las Vegas Valley. Available by phone, video, or on-site visit. Ideal for investors, developers, and attorneys.",
     price: "Hourly — contact for rates",
   },
- {
-    name: "Home Measurement & Floor Plan",
-    href: "/contact",
-    desc: "ANSI-compliant home measurement with a detailed floor plan sketch and GLA calculations. Used for tax appeals, permit applications, MLS accuracy, and more. Serving homeowners and agents throughout the Las Vegas Valley.",
-    price: "Starting at $175",
-  },
 ];
 ---
 
 <Base
   title="Appraisal Services | Las Vegas Appraisal Co."
-  description="Home, divorce, estate, pre-listing, PMI removal, refinance, litigation, and consultation services in Las Vegas. Certified, fast, and accurate. Starting at $425."
+  description="Home, divorce, estate, pre-listing, PMI removal, tax appeal, litigation, lender, and consultation appraisal services in Las Vegas. Certified, fast, and accurate. Starting at $425."
   canonical="https://lvappraisalco.com/services"
 >
 
@@ -82,7 +76,7 @@ const services = [
 
   <section>
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
         {services.map(s => (
           <a href={s.href} class="card" style="text-decoration: none; display: flex; flex-direction: column;">
             <div style="width: 4px; height: 28px; background: var(--blue); border-radius: 2px; margin-bottom: 16px;"></div>
