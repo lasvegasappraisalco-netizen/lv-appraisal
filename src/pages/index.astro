@@ -2,13 +2,15 @@
 import Base from '../layouts/Base.astro';
 
 const services = [
-  { name: "Home Appraisals", href: "/home-appraisals", desc: "Purchase, sale, refinance, or personal — certified valuations you can rely on." },
-  { name: "Divorce Appraisals", href: "/divorce-appraisals", desc: "Court-ready, independent appraisals for equitable property division." },
-  { name: "Estate & Probate", href: "/estate-probate-appraisals", desc: "Date-of-death, retrospective, and trust administration valuations." },
-  { name: "Pre-Listing", href: "/pre-listing-appraisals", desc: "Price your home right the first time with an independent appraisal." },
-  { name: "Refinance & Tax", href: "/refinance-tax-appraisals", desc: "Lender-compliant reports and Clark County property tax appeals." },
-  { name: "Litigation", href: "/litigation-appraisals", desc: "Defensible appraisals for legal disputes, with expert witness testimony." },
-  { name: "For Lenders", href: "/lenders", desc: "FHA-approved residential appraisals for community banks, credit unions, and private lenders." },
+  { name: "Home Appraisals", href: "/home-appraisals", desc: "Purchase, sale, or personal — certified residential valuations you can rely on. Nevada State Certified and FHA-approved." },
+  { name: "Divorce Appraisals", href: "/divorce-appraisals", desc: "Court-ready, independent appraisals for equitable property division in Nevada divorce proceedings." },
+  { name: "Estate & Probate", href: "/estate-probate-appraisals", desc: "Date-of-death, retrospective, and trust administration valuations. IRS-compliant and probate court accepted." },
+  { name: "Pre-Listing", href: "/pre-listing-appraisals", desc: "Price your home right the first time with an independent appraisal before you list." },
+  { name: "PMI Removal", href: "/blog/pmi-removal-appraisal-las-vegas", desc: "If your home has appreciated, you may qualify to cancel your PMI. A certified appraisal is the key." },
+  { name: "Tax Appeal & Home Measurement", href: "/contact", desc: "Independent appraisals for Clark County tax appeals, plus ANSI-compliant floor plan sketches and GLA calculations." },
+  { name: "Litigation", href: "/litigation-appraisals", desc: "Defensible appraisals for legal disputes, with expert witness testimony available." },
+  { name: "For Lenders", href: "/lenders", desc: "FHA-approved appraisals for refinance, HELOC, and home equity loans. Serving banks, credit unions, and private lenders." },
+  { name: "Consultation & Market Analysis", href: "/contact", desc: "Investment strategy, highest and best use, and custom market reports on price trends, rental trends, and demand." },
 ];
 
 const reviews = [
@@ -112,7 +114,7 @@ const homeSchema = [faqSchema, ...reviewSchemas];
           From pre-listing valuations to court-ready divorce appraisals, we handle every type of residential appraisal in the Las Vegas Valley.
         </p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
         {services.map(s => (
           <a href={s.href} class="card" style="text-decoration: none; display: block;">
             <h3 style="margin-bottom: 8px; color: var(--text);">{s.name}</h3>
