@@ -42,6 +42,8 @@ const pageNames: Record<string, string> = {
   "/litigation-appraisals/": "Litigation Appraisals",
   "/lenders": "For Lenders",
   "/lenders/": "For Lenders",
+  "/faq": "FAQ",
+  "/faq/": "FAQ",
 };
 
 const baseSchema = {
@@ -101,13 +103,13 @@ const baseSchema = {
         "url": "https://702alliance.com",
         "description": "Vetted local business network in the Las Vegas Valley"
       },
-"sameAs": [
-  "https://www.facebook.com/LasVegasAppraisalCo",
-  "https://www.instagram.com/lvappraisalco",
-  "https://702alliance.com/members/las-vegas-appraisal-co/",
-  "https://www.yelp.com/biz/l-v-appraisal-company-las-vegas",
-  "https://maps.google.com/maps?cid=14712321063423700795"
-],
+      "sameAs": [
+        "https://www.facebook.com/LasVegasAppraisalCo",
+        "https://www.instagram.com/lvappraisalco",
+        "https://702alliance.com/members/las-vegas-appraisal-co/",
+        "https://www.yelp.com/biz/l-v-appraisal-company-las-vegas",
+        "https://maps.google.com/maps?cid=14712321063423700795"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Appraisal Services",
@@ -138,8 +140,6 @@ const baseSchema = {
         }
       ]
     },
-
-    // Dan Byrne
     {
       "@type": "Person",
       "@id": "https://lvappraisalco.com/#danbyrne",
@@ -161,41 +161,35 @@ const baseSchema = {
         "name": "Real Estate Appraiser",
         "occupationalCategory": "13-2023.00"
       },
-     "knowsAbout": [
-    "Residential Appraisal",
-    "Real Estate Valuation",
-    "Divorce Appraisals",
-    "Estate & Probate Appraisals",
-    "Date of Death Appraisals",
-    "Litigation Appraisals",
-    "Expert Witness Testimony",
-    "Pre-Listing Appraisals",
-    "PMI Removal Appraisals",
-    "Property Tax Appeals",
-    "FHA Appraisals",
-    "Lender Appraisals",
-    "Complex Residential Properties",
-    "Equestrian Estates",
-    "High-Value Custom Homes",
-    "High-Rise Residential Valuation",
-    "Vacant Land Appraisal",
-    "Retrospective Appraisals",
-    "USPAP Compliance",
-    "Data Analytics",
-    "Clark County Real Estate",
-    "Las Vegas Valley Real Estate"
+      "knowsAbout": [
+        "Residential Appraisal",
+        "Real Estate Valuation",
+        "Divorce Appraisals",
+        "Estate & Probate Appraisals",
+        "Date of Death Appraisals",
+        "Litigation Appraisals",
+        "Expert Witness Testimony",
+        "Pre-Listing Appraisals",
+        "PMI Removal Appraisals",
+        "Property Tax Appeals",
+        "FHA Appraisals",
+        "Lender Appraisals",
+        "Complex Residential Properties",
+        "Equestrian Estates",
+        "High-Value Custom Homes",
+        "High-Rise Residential Valuation",
+        "Vacant Land Appraisal",
+        "Retrospective Appraisals",
+        "USPAP Compliance",
+        "Data Analytics",
+        "Clark County Real Estate",
+        "Las Vegas Valley Real Estate"
       ],
-
-
-
-
       "memberOf": [
         { "@type": "Organization", "name": "Coalition of Appraisers in Nevada", "url": "https://coalitionofappraisersnevada.com/" },
         { "@type": "Organization", "name": "National Association of Appraisers", "url": "https://www.naappraisers.org/" }
       ]
     },
-
-    // James K. Smith
     {
       "@type": "Person",
       "@id": "https://lvappraisalco.com/#jimsmith",
@@ -230,8 +224,6 @@ const baseSchema = {
         { "@type": "Organization", "name": "Greater Las Vegas Association of Realtors", "url": "https://www.lasvegasrealtor.com/" }
       ]
     },
-
-    // Breadcrumb
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
@@ -244,8 +236,6 @@ const baseSchema = {
         }] : [])
       ]
     },
-
-    // WebSite
     {
       "@type": "WebSite",
       "@id": "https://lvappraisalco.com/#website",
@@ -253,8 +243,6 @@ const baseSchema = {
       "url": "https://lvappraisalco.com",
       "publisher": { "@id": "https://lvappraisalco.com/#business" }
     },
-
-    // Merge any page-specific schema (object or array of objects)
     ...(pageSchema ? (Array.isArray(pageSchema) ? pageSchema : [pageSchema]) : [])
   ]
 };
@@ -264,6 +252,7 @@ const nav = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 ---
