@@ -1,1 +1,58 @@
 
+---
+import Base from '../layouts/Base.astro';
+
+const serviceSchema = {
+  "@type": "Service",
+  "@id": "https://lvappraisalco.com/consultation-market-analysis#service",
+  "name": "Real Estate Consultation & Market Analysis",
+  "description": "Investment strategy, highest and best use analysis, and custom market reports for Las Vegas Valley residential real estate.",
+  "provider": { "@id": "https://lvappraisalco.com/#business" },
+  "areaServed": { "@type": "State", "name": "Nevada" },
+  "serviceType": "Real Estate Consultation"
+};
+---
+
+<Base
+  title="Real Estate Consultation & Market Analysis | Las Vegas Appraisal Co."
+  description="Investment strategy, highest and best use analysis, and custom market reports on Las Vegas Valley price trends, rental trends, and demand. Call (702) 894-9279."
+  canonical="https://lvappraisalco.com/consultation-market-analysis"
+  schema={serviceSchema}
+>
+
+  <div class="service-page-header">
+    <div class="narrow">
+      <p class="eyebrow">Consultation & Market Analysis</p>
+      <h1>Real Estate Consultation & Market Analysis</h1>
+      <p style="color: var(--text-secondary); margin-top: 16px; font-size: 1.05rem;">
+        Data-driven insight for investment decisions, not just a value opinion.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="service-content">
+      <p>Not every question about a property is answered by a standard appraisal. When you need investment guidance, a highest-and-best-use analysis, or a custom market report, we bring the same rigorous, data-driven approach we use in every valuation.</p>
+
+      <h2>Services Include</h2>
+      <ul>
+        <li>Investment strategy analysis for single-family and small multifamily acquisitions</li>
+        <li>Highest and best use studies for vacant land or underutilized property</li>
+        <li>Custom market reports on price trends, rental trends, and demand for specific neighborhoods</li>
+        <li>Portfolio-level valuation guidance for investors and property managers</li>
+      </ul>
+
+      <h2>Who This Is For</h2>
+      <p>Investors evaluating a purchase, property owners considering redevelopment, real estate professionals who need neighborhood-level data for a client presentation, and lenders or attorneys who need context beyond a single-point value opinion.</p>
+
+      <div class="service-cta">
+        <p>Talk to us about your project.</p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:+17028949279" class="btn btn-primary">(702) 894-9279</a>
+          <a href="/contact" class="btn btn-secondary">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>
