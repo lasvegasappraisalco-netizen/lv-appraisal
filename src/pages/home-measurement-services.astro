@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+const serviceSchema = {
+  "@type": "Service",
+  "@id": "https://lvappraisalco.com/home-measurement-services#service",
+  "name": "Home Measurement & Floor Plan Services in Las Vegas",
+  "description": "Independent home measurement and ANSI Z765 floor plan sketches in Las Vegas. Verify your home's true square footage and gross living area (GLA).",
+  "provider": { "@id": "https://lvappraisalco.com/#business" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Clark County, Nevada" },
+  "serviceType": "Home Measurement and Floor Plan Service"
+};
+---
+<Base
+  title="Home Measurement & Floor Plan Services in Las Vegas | Square Footage Verification | Las Vegas Appraisal Co."
+  description="Independent home measurement and ANSI Z765 floor plan sketches in Las Vegas. Verify your home's true gross living area (GLA). Call (702) 894-9279."
+  canonical="https://lvappraisalco.com/home-measurement-services"
+  schema={serviceSchema}
+>
+  <div class="service-page-header">
+    <div class="narrow">
+      <p class="eyebrow">Home Measurement Services</p>
+      <h1>Home Measurement & Floor Plan Services in Las Vegas</h1>
+      <p style="color: var(--text-secondary); margin-top: 16px; font-size: 1.05rem;">
+        Know your home's true square footage — measured to national standards and documented in a clear floor plan.
+      </p>
+    </div>
+  </div>
+  <section>
+    <div class="service-content">
+      <p>The square footage on public records is often wrong. Plans change during construction, additions go unrecorded, and assessor data can lag reality by years. Since homes are valued by price per square foot, even a small error can cost — or overstate — thousands of dollars. An independent measurement gives you an accurate, defensible figure you can rely on when you list, refinance, appeal an assessment, or simply need the truth.</p>
+      <h2>Measured to ANSI Z765 Standards</h2>
+      <p>We measure your home to the ANSI Z765 standard — the same national methodology used in professional appraisals and increasingly required by lenders. That means your gross living area (GLA) is calculated consistently and correctly, so the number holds up whether it's an agent, a lender, or the Clark County Assessor looking at it.</p>
+      <h2>Two Measurement Options</h2>
+      <p>We offer two levels of service depending on how much detail you need:</p>
+      <ul>
+        <li><strong>Standard:</strong> A basic floor plan sketch showing exterior walls, porches, patios, and garage, with a precise gross living area (GLA) calculation.</li>
+        <li><strong>Premium:</strong> A comprehensive floor plan complete with interior walls, door and window locations, and room layout — useful for staging, planning additions, or marketing a listing.</li>
+      </ul>
+      <h2>Correcting Assessor & Public Record Discrepancies</h2>
+      <p>If your assessor record or MLS listing shows a square footage you don't trust, we independently verify it and document any discrepancy between the record and your home's actual GLA. That documentation is exactly what you need to support a <a href="/tax-appeal-appraisals">property tax appeal</a> or correct a listing before it goes to market.</p>
+      <h2>Who This Is For</h2>
+      <p>For-sale-by-owner sellers and listing agents who need accurate square footage before pricing a home, homeowners preparing a <a href="/pre-listing-appraisals">pre-listing appraisal</a>, owners who've added finished space and want it reflected, and anyone who suspects the public record overstates their home's size.</p>
+      <div class="service-cta">
+        <p>Get an accurate, independent measurement of your home.</p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:+17028949279" class="btn btn-primary">(702) 894-9279</a>
+          <a href="/contact" class="btn btn-secondary">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
