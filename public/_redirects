@@ -1,0 +1,3 @@
+# Legacy GoDaddy URL redirects — old path → new path, 301 permanent
+/about-us     /about      301
+/contact-us   /contact    301
