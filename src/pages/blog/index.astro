@@ -73,7 +73,7 @@ const posts = [
   </section>
   <section>
     <div class="container" style="max-width: 800px;">
-      {posts.map(post => (
+     {posts.slice().sort((a, b) => b.date.localeCompare(a.date)).map(post => (
         <a href={post.href} style="display: block; text-decoration: none; padding: 32px 0; border-bottom: 1px solid var(--border);">
           <h2 style="font-size: 1.3rem; color: var(--text); margin-bottom: 8px; transition: color 0.2s;">{post.title}</h2>
           <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 8px;">{post.excerpt}</p>
